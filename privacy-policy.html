@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prismtune Privacy Policy</title>
+<meta name="description" content="Privacy policy of Prismtune, the offline music player with live visualizers for Android. Politique de confidentialité de Prismtune.">
+<style>
+  :root {
+    --bg: #ffffff; --text: #1b1b22; --muted: #5d5d6b; --card: #f5f4fa; --line: #e3e1ee; --accent: #7a2cff; --accent2: #c2187e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b0716; --text: #ecebf5; --muted: #a9a7bd; --card: #161126; --line: #2a2340; --accent: #b98aff; --accent2: #ff6fc0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 8px; }
+  h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 6px; }
+  h1 span { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  h2 { font-size: 1.25rem; margin: 40px 0 8px; padding-top: 12px; border-top: 1px solid var(--line); }
+  h3 { font-size: 1.05rem; margin: 24px 0 4px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); font-size: .92rem; }
+  .langs { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+  .langs a { text-decoration: none; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line); color: var(--text); background: var(--card); font-weight: 600; font-size: .95rem; }
+  .summary { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin: 16px 0; }
+  .summary ul { margin: 6px 0 0; padding-left: 20px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  .table-wrap { overflow-x: auto; }
+  a { color: var(--accent); }
+  .lang-block + .lang-block { margin-top: 56px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1><span>Prismtune</span> — Privacy Policy / Politique de confidentialité</h1>
+    <p class="muted">Effective date / Date d'entrée en vigueur : 23 October 2026 / 23 octobre 2026 · App: Prismtune (Android, package <code>com.prismtune.app</code>)</p>
+    <nav class="langs" aria-label="Language / Langue">
+      <a href="#en" lang="en">English</a>
+      <a href="#fr" lang="fr">Français</a>
+    </nav>
+  </header>
+
+  <!-- ============================== ENGLISH ============================== -->
+  <section id="en" class="lang-block" lang="en">
+    <h2>English</h2>
+
+    <div class="summary">
+      <strong>In short</strong>
+      <ul>
+        <li>Prismtune plays the music stored on your device. Your music, playlists and settings stay on your device.</li>
+        <li>We (the developer) do not collect, store, sell or share any personal data. There are no accounts, ads, analytics or trackers.</li>
+        <li>The only online feature is the optional Premium purchase, which is handled entirely by Google Play.</li>
+      </ul>
+    </div>
+
+    <h3>1. Who we are</h3>
+    <p>Prismtune is published by <strong>Prismtune Studio</strong> (“we”). For any privacy question, contact us at <a href="mailto:prismtune.studio@gmail.com">prismtune.studio@gmail.com</a>.</p>
+
+    <h3>2. Data the app uses on your device</h3>
+    <p>The following information is used <strong>only on your device</strong> to make the app work. It is never sent to us or to any third party by Prismtune.</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Information</th><th>Why</th></tr>
+        <tr><td>Music files and their metadata (title, artist, album, duration, folder, album art)</td><td>To build your library and play your songs. Files are only read, never modified, copied or uploaded.</td></tr>
+        <tr><td>Playlists, favorites, listening history, queue, visualizer settings and presets</td><td>Saved in the app's private storage so you can find them again.</td></tr>
+        <tr><td>Audio being played by Prismtune</td><td>Analyzed in real time to animate the visualizers. Nothing is recorded or stored.</td></tr>
+        <tr><td>Diagnostic log (technical errors)</td><td>Kept in memory, shown in Settings › Diagnostics, cleared when the app closes. It leaves the device only if you choose to copy it yourself.</td></tr>
+        <tr><td>Premium status</td><td>A simple “unlocked / not unlocked” flag stored on your device so Premium works offline.</td></tr>
+      </table>
+    </div>
+
+    <h3>3. Permissions</h3>
+    <ul>
+      <li><strong>Music / audio files</strong> (READ_MEDIA_AUDIO, or storage on Android 12 and earlier): to list and play your local music.</li>
+      <li><strong>Notifications</strong>: to show playback controls in the notification and on the lock screen.</li>
+      <li><strong>Microphone</strong> (RECORD_AUDIO, optional): only used as a fallback by Android's audio “Visualizer” API, for the rare formats whose sound the player cannot analyze directly. It analyzes the sound being played; it does not record you, and nothing is saved or sent. You can refuse it; the app works without it.</li>
+      <li><strong>Background playback</strong> (foreground service, wake lock): to keep playing when the screen is off.</li>
+      <li><strong>Internet, network state and Google Play billing</strong>: added by the Google Play Billing library and used only to communicate with Google Play for the optional Premium purchase. Prismtune has no server of its own.</li>
+    </ul>
+
+    <h3>4. Optional Premium purchase (Google Play)</h3>
+    <p>Prismtune Premium is an optional one-time in-app purchase. Payment is processed entirely by <strong>Google Play</strong>: we never see or receive your payment details. To unlock Premium and restore it on your other devices, the app asks Google Play whether your Google account owns the purchase. This information is kept on your device and is not sent to us. Google's processing of your data is governed by the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and the <a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play Terms of Service</a>.</p>
+
+    <h3>5. Sharing and selling</h3>
+    <p>We do not share, sell or rent any data. Prismtune contains no advertising, no analytics and no third-party tracking SDK.</p>
+
+    <h3>6. Backups</h3>
+    <p>Automatic Android cloud backup is disabled for Prismtune. If you use <em>Settings › Data › Export a backup</em>, a JSON file containing your settings, playlists, favorites and history (never your audio files) is saved where you choose. You control that file.</p>
+
+    <h3>7. Data retention and deletion</h3>
+    <p>All data stays on your device until you delete it. You can clear history and the saved queue in the app's settings, or remove everything by clearing the app's storage or uninstalling Prismtune. Since we hold no data about you, there is nothing for us to delete; you may still contact us with any request.</p>
+
+    <h3>8. Security</h3>
+    <p>Your data is kept in the app's private storage, protected by Android's app sandbox. Communication with Google Play is handled by Google's own secure services.</p>
+
+    <h3>9. Children</h3>
+    <p>Prismtune is a general-audience music player. It does not knowingly collect personal information from anyone, including children.</p>
+
+    <h3>10. Your rights</h3>
+    <p>Depending on where you live (for example under the EU/UK GDPR), you have rights of access, rectification, erasure and objection. Because Prismtune does not collect personal data on our side, these rights are exercised directly on your device. For purchases, contact Google. For any question, write to <a href="mailto:prismtune.studio@gmail.com">prismtune.studio@gmail.com</a>. You may also lodge a complaint with your data protection authority.</p>
+
+    <h3>11. Changes</h3>
+    <p>If this policy changes (for example if online features such as internet radio are added), we will update this page and its effective date before the change applies.</p>
+  </section>
+
+  <!-- ============================== FRANÇAIS ============================== -->
+  <section id="fr" class="lang-block" lang="fr">
+    <h2>Français</h2>
+
+    <div class="summary">
+      <strong>En bref</strong>
+      <ul>
+        <li>Prismtune lit la musique enregistrée sur votre appareil. Votre musique, vos playlists et vos réglages restent sur votre appareil.</li>
+        <li>Nous (l'éditeur) ne collectons, ne conservons, ne vendons et ne partageons aucune donnée personnelle. Pas de compte, pas de publicité, pas de mesure d'audience, pas de pisteur.</li>
+        <li>La seule fonction en ligne est l'achat facultatif de Premium, entièrement géré par Google Play.</li>
+      </ul>
+    </div>
+
+    <h3>1. Qui sommes-nous</h3>
+    <p>Prismtune est édité par <strong>Prismtune Studio</strong> (« nous »). Pour toute question sur la confidentialité : <a href="mailto:prismtune.studio@gmail.com">prismtune.studio@gmail.com</a>.</p>
+
+    <h3>2. Données utilisées sur votre appareil</h3>
+    <p>Les informations suivantes sont utilisées <strong>uniquement sur votre appareil</strong> pour faire fonctionner l'application. Prismtune ne les envoie jamais, ni à nous ni à un tiers.</p>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Information</th><th>Pourquoi</th></tr>
+        <tr><td>Fichiers musicaux et leurs métadonnées (titre, artiste, album, durée, dossier, pochette)</td><td>Constituer votre bibliothèque et lire vos morceaux. Les fichiers sont seulement lus, jamais modifiés, copiés ni envoyés.</td></tr>
+        <tr><td>Playlists, favoris, historique d'écoute, file d'attente, réglages et presets des visualizers</td><td>Enregistrés dans l'espace privé de l'application pour les retrouver.</td></tr>
+        <tr><td>Son joué par Prismtune</td><td>Analysé en temps réel pour animer les visualizers. Rien n'est enregistré ni conservé.</td></tr>
+        <tr><td>Journal de diagnostic (erreurs techniques)</td><td>Gardé en mémoire, affiché dans Réglages › Diagnostic, effacé à la fermeture. Il ne quitte l'appareil que si vous le copiez vous-même.</td></tr>
+        <tr><td>État Premium</td><td>Une simple indication « débloqué / non débloqué » conservée sur l'appareil pour que Premium fonctionne hors ligne.</td></tr>
+      </table>
+    </div>
+
+    <h3>3. Autorisations</h3>
+    <ul>
+      <li><strong>Musique / fichiers audio</strong> (READ_MEDIA_AUDIO, ou stockage jusqu'à Android 12) : lister et lire votre musique locale.</li>
+      <li><strong>Notifications</strong> : afficher les commandes de lecture dans la notification et sur l'écran verrouillé.</li>
+      <li><strong>Micro</strong> (RECORD_AUDIO, facultatif) : utilisé seulement en secours par l'API « Visualizer » d'Android, pour les rares formats dont le lecteur ne peut pas analyser le son directement. Il analyse le son joué ; il ne vous enregistre pas, rien n'est conservé ni envoyé. Vous pouvez refuser : l'application fonctionne sans.</li>
+      <li><strong>Lecture en arrière-plan</strong> (service au premier plan, maintien en éveil) : continuer la lecture écran éteint.</li>
+      <li><strong>Internet, état du réseau et facturation Google Play</strong> : ajoutés par la bibliothèque Google Play Billing et utilisés uniquement pour communiquer avec Google Play lors de l'achat facultatif de Premium. Prismtune n'a aucun serveur.</li>
+    </ul>
+
+    <h3>4. Achat facultatif de Premium (Google Play)</h3>
+    <p>Prismtune Premium est un achat intégré unique et facultatif. Le paiement est entièrement traité par <strong>Google Play</strong> : nous ne voyons ni ne recevons jamais vos informations de paiement. Pour débloquer Premium et le restaurer sur vos autres appareils, l'application demande à Google Play si votre compte Google possède l'achat. Cette information est conservée sur votre appareil et ne nous est pas transmise. Le traitement de vos données par Google relève des <a href="https://policies.google.com/privacy?hl=fr" rel="noopener">Règles de confidentialité de Google</a> et des <a href="https://play.google.com/about/play-terms/" rel="noopener">Conditions d'utilisation de Google Play</a>.</p>
+
+    <h3>5. Partage et vente</h3>
+    <p>Nous ne partageons, ne vendons et ne louons aucune donnée. Prismtune ne contient ni publicité, ni outil de mesure d'audience, ni module de pistage tiers.</p>
+
+    <h3>6. Sauvegardes</h3>
+    <p>La sauvegarde automatique d'Android dans le cloud est désactivée pour Prismtune. Si vous utilisez <em>Réglages › Données › Exporter une sauvegarde</em>, un fichier JSON contenant vos réglages, playlists, favoris et historique (jamais vos fichiers audio) est enregistré à l'endroit que vous choisissez. Vous gardez la maîtrise de ce fichier.</p>
+
+    <h3>7. Conservation et suppression</h3>
+    <p>Toutes les données restent sur votre appareil jusqu'à ce que vous les supprimiez. Vous pouvez effacer l'historique et la file mémorisée dans les réglages, ou tout supprimer en effaçant les données de l'application ou en la désinstallant. Comme nous ne détenons aucune donnée vous concernant, nous n'avons rien à supprimer ; vous pouvez néanmoins nous contacter pour toute demande.</p>
+
+    <h3>8. Sécurité</h3>
+    <p>Vos données sont conservées dans l'espace privé de l'application, protégé par le cloisonnement des applications d'Android. Les échanges avec Google Play passent par les services sécurisés de Google.</p>
+
+    <h3>9. Enfants</h3>
+    <p>Prismtune est un lecteur de musique destiné à tous les publics. Il ne collecte sciemment aucune information personnelle, y compris auprès des enfants.</p>
+
+    <h3>10. Vos droits</h3>
+    <p>Selon votre lieu de résidence (par exemple au titre du RGPD), vous disposez de droits d'accès, de rectification, d'effacement et d'opposition. Prismtune ne collectant pas de données personnelles de notre côté, ces droits s'exercent directement sur votre appareil. Pour les achats, adressez-vous à Google. Pour toute question : <a href="mailto:prismtune.studio@gmail.com">prismtune.studio@gmail.com</a>. Vous pouvez aussi saisir l'autorité de protection des données de votre pays (en France, la CNIL).</p>
+
+    <h3>11. Modifications</h3>
+    <p>Si cette politique évolue (par exemple avec l'ajout de fonctions en ligne comme la radio internet), nous mettrons à jour cette page et sa date d'entrée en vigueur avant que le changement ne s'applique.</p>
+  </section>
+</main>
+</body>
+</html>
