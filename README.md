@@ -1,2 +1,2 @@
 # prismtune-legal
-Prismtune Privacy Policy
+PrismTune Privacy Policy
